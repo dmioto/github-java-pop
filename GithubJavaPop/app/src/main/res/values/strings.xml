@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github JavaPop</string>
+    <string name="error_popular_java_repositories">Ocorreu um erro.</string>
+</resources>

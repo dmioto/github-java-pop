@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProgressBarAccent">
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- Buttons -->
+    <!-- Regular Buttons -->
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/textSize_14</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">216dp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:lineSpacingExtra">5.2sp</item>
+        <item name="android:stateListAnimator">@null
+        </item> <!-- This removes the android default shadow and animations on button -->
+    </style>
+
+    <!--    Styleguide : Primary Button Large-->
+    <style name="ButtonStyleAccent" parent="ButtonStyle">
+        <item name="android:textColor">@color/git_button_accent</item>
+        <item name="android:background">@drawable/git_button_accent</item>
+    </style>
+
+    <!-- Alert top style -->
+    <style name="SBAlert.Top" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <!-- Toolbar Title Style -->
+    <style name="ToolbarTitle">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:textColor">@color/gray_50</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionMenuTextColor">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <!-- Base Activity Themes -->
+    <style name="AppTheme.White" parent="AppTheme">
+        <item name="android:statusBarColor">@color/gray_10</item>
+    </style>
+    <style name="AppTheme.LightGray" parent="AppTheme">
+        <item name="android:statusBarColor">@color/gray_20</item>
+    </style>
+    <style name="AppTheme.Summer" parent="AppTheme">
+        <item name="android:statusBarColor">@color/summer_70</item>
+    </style>
+    <style name="AppTheme.Indigo" parent="AppTheme">
+        <item name="android:statusBarColor">@color/indigo_70</item>
+    </style>
+</resources>
